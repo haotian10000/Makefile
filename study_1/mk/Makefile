@@ -17,6 +17,9 @@ $(TARGET):$(OBJ)
 clean:
 	rm -rf $(TARGET) $(OBJ)
 
-%.o:%.c
+#缺省规则
+# %.o:%.c
+# .c.o
+.c.o:
 	$(CC) $(CFLAGS) $(INC) -o $@ -c $< 
 
